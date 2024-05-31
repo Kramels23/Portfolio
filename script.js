@@ -1,11 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var overlay = document.getElementById('page-overlay');
-    setTimeout(function() {
-        overlay.style.display = 'none';
-    }, 2000); // Correspond à la durée de l'animation CSS
-});
+// -------- NAVBAR --------
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-window.addEventListener('beforeunload', function(event) {
-    var overlay = document.getElementById('page-overlay');
-    overlay.style.animation = 'fadeIn 2s ease-out forwards';
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
 });
