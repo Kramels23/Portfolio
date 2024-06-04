@@ -5,41 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Allan Chevalet</title>
     <link rel="icon" type="image/png" href="img/icon.png">
-    
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Hind+Vadodara:wght@300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="navbar-left">
-        <a href="#" class="nav-logo">
-            <img src="img/icon.png" alt="Logo">
+<nav class="navbar navbar-expand-lg navbar-custom d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon.png" alt="Logo" width="30" height="30" class="logo-rounded">
         </a>
-        <div class="icons-container">
-            <a href="https://www.linkedin.com/in/allan-chevalet/" target="_blank">
+        <div class="navbar-nav d-flex align-items-center">
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/allan-chevalet/" target="_blank">
                 <i class="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="https://www.instagram.com/allan_cvlt/" target="_blank">
+            <a class="nav-item nav-link" href="https://www.instagram.com/allan_cvlt/" target="_blank">
                 <i class="fab fa-instagram fa-2x"></i>
             </a>
         </div>
     </div>
-    <div class="navbar-right">
-        <ul class="nav-menu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Réalisations</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-link-custom" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Réalisations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
     
     <script src="script.js"></script>
-    <script>
-    </script>
-    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
