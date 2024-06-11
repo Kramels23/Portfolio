@@ -17,12 +17,13 @@ body {
 
 .nav-link-custom {
     font-size: 20px;
+    position: relative;
 }
 
 .nav-link-custom, .navbar-brand, .navbar-nav .nav-link {
     color: white !important;
     text-transform: uppercase;
-    font-family: 'Averia Serif Libre', 'Hind Vadodara', sans-serif;
+    font-family: 'Amaranth', sans-serif;
 }
 
 #navbarNav {
@@ -33,4 +34,29 @@ body {
 
 .navbar-nav .nav-item {
     margin: 0 10px; /* Add margin to the left and right */
+}
+
+.nav-link-custom::before, .nav-link-custom::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    background: white;
+    left: 0;
+    right: 0;
+    transform: scaleX(0); /* Add this line */
+    transform-origin: center; /* Add this line */
+    transition: transform 0.3s ease-in-out; /* Change this line */
+}
+
+.nav-link-custom::before {
+    left: 50%;
+}
+
+.nav-link-custom::after {
+    right: 50%;
+}
+
+.nav-link-custom:hover::before, .nav-link-custom:hover::after {
+    transform: scaleX(1); /* Change this line */
 }
